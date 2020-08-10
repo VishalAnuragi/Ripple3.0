@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30035E</color>
+    <color name="colorPrimaryDark">#010727</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="default_first">#EA84C7</color>
+    <color name="default_second">#BA73C1</color>
+    <color name="default_third">#5966A6</color>
+    <color name="default_fourth">#020F57</color>
+
+
+    <array name="rainbow_default">
+        <item>@color/default_first</item>
+        <item>@color/default_second</item>
+        <item>@color/default_third</item>
+        <item>@color/default_fourth</item>
+    </array>
+
+</resources>

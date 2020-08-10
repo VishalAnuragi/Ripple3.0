@@ -1,0 +1,160 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:clickable="true">
+
+
+   <com.cleveroad.audiovisualization.GLAudioVisualizationView
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/visualizer_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:av_bubblesSize="30dp"
+       app:av_bubblesRandomizeSizes="true"
+       app:av_wavesHeight="80dp"
+       app:av_wavesFooterHeight="200dp"
+       app:av_wavesCount="7"
+       app:av_layersCount="4"
+       app:av_bubblesPerLayer="22"
+       app:av_wavesColors="@array/rainbow_default"
+       app:av_backgroundColor="@android:color/darker_gray" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+ <TextView
+     android:id="@+id/song_count"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/favouriteButton"
+     android:layout_alignParentEnd="true"
+     android:layout_margin="20dp"
+     android:text="text"
+     android:textSize="20sp"
+     android:textColor="#efefef" />
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:padding="5dp"
+        android:layout_above="@+id/songArtist"
+        android:singleLine="true"
+        android:text="Castle Of Glass"
+        android:textColor="#ffffff"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/songArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Linkin Park"
+        android:layout_marginBottom="10dp"
+        android:textColor="#eeeeee"
+        android:textSize="15sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startTime"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:progressDrawable="@drawable/track"
+        android:thumb="@drawable/thumb"
+        android:indeterminate="false"/>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/playPauseButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="70dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/playPauseButton"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/favouriteButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/favorite_off"/>
+
+    <ImageButton
+        android:id="@+id/playPauseButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/pause"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/playPauseButton"
+        android:layout_marginLeft="15dp" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="90dp"
+        android:layout_toLeftOf="@+id/playPauseButton"
+        android:background="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/loopButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toRightOf="@+id/nextButton"
+        android:background="@drawable/loop_off" />
+
+    <ImageButton
+        android:id="@+id/shuffleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toLeftOf="@+id/previousButton"
+        android:background="@drawable/shuffle_off" />
+
+</RelativeLayout>
+

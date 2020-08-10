@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DED4EA"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/timer_text_minutes"
+        android:layout_width="180dp"
+        android:layout_height="115dp"
+        android:background="@drawable/bg_1"
+        android:paddingHorizontal="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        android:hint="000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="90sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="115dp"
+        android:background="@drawable/bg_1"
+        android:paddingHorizontal="10dp"
+       android:layout_toRightOf="@id/timer_text_minutes"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:elevation="20dp"
+        android:text=":"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        android:textSize="90sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/timer_text_seconds"
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_1"
+        android:paddingHorizontal="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="20dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        android:text="00"
+        android:textSize="90sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+<EditText
+    android:id="@+id/timer_minutes_input"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/timer_text_minutes"
+    android:text="text"
+    android:layout_centerHorizontal="true"
+    android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/start_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer_text_minutes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/timer_start_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/timer_bt1_bg"
+            android:text="START"
+            android:textSize="40sp"
+            android:elevation="20dp"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background"
+            android:outlineSpotShadowColor="@color/cardview_dark_background"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_btn_layout"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/timer_pause_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/timer_bt2_bg"
+            android:text="PAUSE"
+            android:textSize="20sp"
+            android:elevation="20dp"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background"
+            android:outlineSpotShadowColor="@color/cardview_dark_background"/>
+
+        <Button
+            android:id="@+id/timer_reset_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/timer_bt3_bg"
+            android:text="RESET"
+            android:textSize="20sp"
+            android:elevation="20dp"
+            android:outlineAmbientShadowColor="@color/cardview_dark_background"
+            android:outlineSpotShadowColor="@color/cardview_dark_background"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

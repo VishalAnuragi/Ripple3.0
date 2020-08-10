@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ripple2.0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="start">Comienzas</string>
+    <string name="settings">Ajustes</string>
+    <string name="minute">minuto</string>
+    <string name="minutes">minutos</string>
+    <string name="stop_music">Detener la música</string>
+    <string name="turn_off_bluetooth">Desactiva el bluetooth</string>
+    <string name="turn_off_wifi">Desactiva el Wifi</string>
+    <string name="stop">Stop</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+</resources>
+
+

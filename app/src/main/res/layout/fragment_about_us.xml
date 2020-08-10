@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/aboutUsPhoto"
+        android:layout_marginTop="150dp"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Developed by CrimsonDynamo02"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#eeeeee"
+        android:layout_below="@+id/aboutUsPhoto"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="  For suggestions regarding bugs fixes and UI interfaces:-"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#DD0303"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="  email to - "
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#DD0303"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="crimsondynamo02@gmail.com"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#00BCD4"
+        android:layout_toRightOf="@+id/textemail"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
